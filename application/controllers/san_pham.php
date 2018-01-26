@@ -14,8 +14,8 @@ class San_pham extends CI_Controller
     public function danhsach()
     {
         $this->load->model('san_pham/m_san_pham_table');
-        $danhsach=$this->m_san_pham_table->getSanPham();
-        echo $danhsach;
+        $this->m_san_pham_table->getSanPham();
+        $this->load->view('san_pham/v_san_pham');
     }
 
     public function them()
